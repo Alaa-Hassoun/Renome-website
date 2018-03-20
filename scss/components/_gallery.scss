@@ -1,13 +1,19 @@
 .gallery {
     &__images {
         display: flex;
+        @include respond(xs-bp) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__link {
         transition: all 1s;
-
+        // backface-visibility: hidden;
         &:not(:last-child) {
             margin-right: -25rem;
+            @include respond(xs-bp) {
+                margin-right: 0;
+            }
         }
         
         &:hover {
@@ -15,10 +21,23 @@
             transform: scale(1.1);
         }
 
+        @include respond(xs-bp) {
+            &:not(:first-child) {
+                margin-bottom: -9rem;
+            }
+        }
+
     }
 
     &__pic {
-        
+        width:100%; 
+        @include respond(xl-bp) {
+            width:100%;
+        }
+
+        @include respond(xs-bp) {
+            width:100%;
+        }
         
     }
 

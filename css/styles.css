@@ -534,7 +534,7 @@ body {
 .blog-content__text {
   font-family: "Axis";
   font-size: 1.6rem;
-  color: orangered;
+  color: #000;
   text-transform: uppercase; }
   @media only screen and (max-width: 30em) {
     /* line 93, ../scss/components/_blog.scss */
@@ -564,21 +564,44 @@ body {
 /* line 2, ../scss/components/_gallery.scss */
 .gallery__images {
   display: flex; }
-/* line 6, ../scss/components/_gallery.scss */
+  @media only screen and (max-width: 20em) {
+    /* line 2, ../scss/components/_gallery.scss */
+    .gallery__images {
+      flex-direction: column-reverse; } }
+/* line 9, ../scss/components/_gallery.scss */
 .gallery__link {
   transition: all 1s; }
-  /* line 9, ../scss/components/_gallery.scss */
+  /* line 12, ../scss/components/_gallery.scss */
   .gallery__link:not(:last-child) {
     margin-right: -25rem; }
-  /* line 13, ../scss/components/_gallery.scss */
+    @media only screen and (max-width: 20em) {
+      /* line 12, ../scss/components/_gallery.scss */
+      .gallery__link:not(:last-child) {
+        margin-right: 0; } }
+  /* line 19, ../scss/components/_gallery.scss */
   .gallery__link:hover {
     z-index: 1;
     transform: scale(1.1); }
-/* line 25, ../scss/components/_gallery.scss */
+  @media only screen and (max-width: 20em) {
+    /* line 25, ../scss/components/_gallery.scss */
+    .gallery__link:not(:first-child) {
+      margin-bottom: -9rem; } }
+/* line 32, ../scss/components/_gallery.scss */
+.gallery__pic {
+  width: 100%; }
+  @media only screen and (max-width: 75em) {
+    /* line 32, ../scss/components/_gallery.scss */
+    .gallery__pic {
+      width: 100%; } }
+  @media only screen and (max-width: 20em) {
+    /* line 32, ../scss/components/_gallery.scss */
+    .gallery__pic {
+      width: 100%; } }
+/* line 44, ../scss/components/_gallery.scss */
 .gallery__link:hover > .gallery__pic {
   z-index: 1;
   transform: scale(1); }
-/* line 31, ../scss/components/_gallery.scss */
+/* line 50, ../scss/components/_gallery.scss */
 .gallery__hours-bg {
   display: flex;
   flex-direction: column;
@@ -587,7 +610,7 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid #dcdee0; }
-/* line 41, ../scss/components/_gallery.scss */
+/* line 60, ../scss/components/_gallery.scss */
 .gallery__heading {
   font-size: 1.6rem;
   font-family: "Montserrat-Bold";
@@ -595,13 +618,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1.5rem; }
-/* line 50, ../scss/components/_gallery.scss */
+/* line 69, ../scss/components/_gallery.scss */
 .gallery__days {
   font-size: 1.6rem;
   font-family: "Montserrat-Bold";
   color: #1e2633;
   text-transform: uppercase; }
-/* line 57, ../scss/components/_gallery.scss */
+/* line 76, ../scss/components/_gallery.scss */
 .gallery__hours {
   display: block;
   font-size: 1.6rem;
@@ -609,33 +632,33 @@ body {
   color: #1e2633;
   text-align: center; }
 
-/* line 69, ../scss/components/_gallery.scss */
+/* line 88, ../scss/components/_gallery.scss */
 .lightboxOverlay {
   z-index: 9999999; }
 
-/* line 73, ../scss/components/_gallery.scss */
+/* line 92, ../scss/components/_gallery.scss */
 .lightbox {
   z-index: 99999999; }
 
-/* line 77, ../scss/components/_gallery.scss */
+/* line 96, ../scss/components/_gallery.scss */
 .lb-data .lb-close {
   background-image: url(../img/close.png); }
 
-/* line 81, ../scss/components/_gallery.scss */
+/* line 100, ../scss/components/_gallery.scss */
 .lb-closeContainer {
   position: absolute;
   top: -8%;
   right: 17rem; }
 
-/* line 87, ../scss/components/_gallery.scss */
+/* line 106, ../scss/components/_gallery.scss */
 .lb-nav a.lb-prev {
   background-image: url(../img/prev.png); }
 
-/* line 91, ../scss/components/_gallery.scss */
+/* line 110, ../scss/components/_gallery.scss */
 .lb-nav a.lb-next {
   background-image: url(../img/next.png); }
 
-/* line 95, ../scss/components/_gallery.scss */
+/* line 114, ../scss/components/_gallery.scss */
 .lb-cancel {
   background-image: url(../img/loading.gif); }
 
@@ -852,7 +875,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 69, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 999999;
   opacity: 0;
   visibility: hidden; }
@@ -1233,7 +1256,7 @@ body {
 .header-mob {
   position: fixed;
   z-index: 99999;
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(255, 69, 0, 0.22);
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.22);
   background-color: #fff;
   width: 100%;
   padding: 3rem 0;
@@ -1287,13 +1310,13 @@ body {
   /* line 56, ../scss/layout/_navigation-mob.scss */
   .header-mob__logo {
     font-size: 3.5rem;
-    color: orangered;
+    color: #000;
     font-family: "Pacifico";
     margin-top: 0;
     margin-bottom: 0; }
   /* line 65, ../scss/layout/_navigation-mob.scss */
   .header-mob__link:link, .header-mob__link:visited {
-    color: orangered;
+    color: #000;
     text-decoration: none;
     transition: color .5s; }
   /* line 72, ../scss/layout/_navigation-mob.scss */
@@ -1342,7 +1365,7 @@ body {
   /* line 132, ../scss/layout/_navigation-mob.scss */
   .header-mob__shop:link, .header-mob__shop:visited {
     font-size: 1.6rem;
-    color: orangered;
+    color: #000;
     transition: all .5s; }
   /* line 140, ../scss/layout/_navigation-mob.scss */
   .header-mob__shop:hover, .header-mob__shop:focus {
@@ -1362,7 +1385,7 @@ body {
     display: inline-block;
     width: 2px;
     height: 2rem;
-    background-color: orangered; }
+    background-color: #000; }
   /* line 166, ../scss/layout/_navigation-mob.scss */
   .header-mob__navigation {
     z-index: 99999; }
@@ -1388,7 +1411,7 @@ body {
       .header-mob__navigation-icon, .header-mob__navigation-icon::before, .header-mob__navigation-icon::after {
         width: 2.5rem;
         height: 2px;
-        background-color: orangered;
+        background-color: #000;
         display: inline-block; }
       /* line 199, ../scss/layout/_navigation-mob.scss */
       .header-mob__navigation-icon::before, .header-mob__navigation-icon::after {
@@ -1422,7 +1445,7 @@ body {
     /* line 234, ../scss/layout/_navigation-mob.scss */
     .header-mob__navigation-link:link, .header-mob__navigation-link:visited {
       text-decoration: none;
-      color: orangered;
+      color: #000;
       font-size: 1.6rem;
       text-transform: uppercase;
       font-family: "Montserrat-Bold";
@@ -1501,7 +1524,7 @@ body {
       background: transparent;
       border: none;
       font-size: 2rem;
-      color: orangered;
+      color: #000;
       margin-right: 1rem;
       transition: all .3s;
       cursor: pointer; }
@@ -1513,7 +1536,7 @@ body {
 .header {
   position: fixed;
   z-index: 999999;
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(255, 69, 0, 0.22);
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.22);
   background-color: #fff;
   width: 100%;
   padding: 3rem 0;
@@ -1567,13 +1590,13 @@ body {
   /* line 57, ../scss/layout/_navigation.scss */
   .header__logo {
     font-size: 3.5rem;
-    color: orangered;
+    color: #000;
     font-family: "Pacifico";
     margin-top: 0;
     margin-bottom: 0; }
   /* line 67, ../scss/layout/_navigation.scss */
   .header__link:link, .header__link:visited {
-    color: orangered;
+    color: #000;
     text-decoration: none;
     transition: color .5s; }
   /* line 74, ../scss/layout/_navigation.scss */
@@ -1605,7 +1628,7 @@ body {
   /* line 110, ../scss/layout/_navigation.scss */
   .header__navigation-link:link, .header__navigation-link:visited {
     text-decoration: none;
-    color: orangered;
+    color: #000;
     font-size: 1.6rem;
     text-transform: uppercase;
     font-family: "Montserrat-Bold";
@@ -1658,11 +1681,11 @@ body {
     display: inline-block;
     width: 2px;
     height: 60%;
-    background-color: orangered; }
+    background-color: #000; }
   /* line 197, ../scss/layout/_navigation.scss */
   .header__search:link, .header__search:visited, .header__shop:link, .header__shop:visited {
     font-size: 1.6rem;
-    color: orangered;
+    color: #000;
     transition: all .5s; }
   /* line 204, ../scss/layout/_navigation.scss */
   .header__search:hover, .header__search:focus, .header__shop:hover, .header__shop:focus {
