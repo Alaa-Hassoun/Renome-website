@@ -1,0 +1,139 @@
+.header-bg {
+   
+    &__owl {
+
+    }
+
+    &__item {
+
+    }
+
+    &__heading {
+        position: absolute;
+        right:5%;
+        bottom:10%;
+        z-index: 1;
+        font-size: 6rem;
+        font-family: $font-family-3;
+        color:$color-white;
+        margin: 0;
+        padding: 0;
+
+        @include respond(md-bp) {
+            font-size: 5rem;
+        }
+
+        @include respond(sm-bp) {
+            font-size: 5.5rem;
+            left:7%;
+            bottom:30%;
+        }
+       
+        &--color {
+            display: block;
+            font-family: $font-family-1-b;
+            font-size: 4rem;
+            color: $color-red-dark;
+        }
+    }
+
+    &__image {
+        position: relative;
+        height: 100vh;
+        object-fit: cover;
+        
+    }
+
+    // OWL CAROUSEL CLASSES
+    .owl-nav {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        left: 5%;
+        bottom: 10%;
+    }
+
+    .owl-theme .owl-nav [class*=owl-] {
+        color:$color-white;
+        margin: 1rem;
+        padding: 0;
+        background:transparent;
+        border-radius:0;
+        border: 3px solid $color-white;
+        transition: all .2s;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background:$color-red-dark;
+    }
+
+    .fa-angle-right:before,
+    .fa-angle-left:before {
+        width: 5.5rem;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+    }
+
+    .owl-dots {
+        @include respond(sm-bp) {
+            position: absolute;
+            bottom: 5rem;
+            left: 39%;
+            margin-top: 0;
+        }
+
+        @include respond(xs-bp) { 
+            left: 34%;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        @include respond(sm-bp) {
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border: 2px solid $color-white;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        @include respond(sm-bp) {
+            background: $color-white;
+        }
+    }
+
+}
+
+// ABOUT BACKGROUND
+.header-bgtwo {
+    background-image: url(../img/a-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:100vh;
+    position: relative;
+    &__heading-box {
+        display: block;
+        position: absolute;
+        bottom:-55rem;
+        left: 0;
+
+    }
+
+    &__heading {
+        font-size: 6.6rem;
+        font-family: $font-family-3;
+        color:$color-white;
+
+        &--color {
+            font-size: 4rem;
+            font-family: $font-family-1-b;
+            color:$color-red-dark;  
+            display: block;
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+// CLEARFIX
+@mixin clearFix {
+    &::after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+}
+
+// MEDIA QUERIES (BREAK POINTS)
+// MEDIA QUERY MANAGER
+/*
+
+0 - 320px : Custom, iPhone Retina / xs-bp
+320pxpx - 480px : Extra Small Devices, Phones / sm-bp
+480px - 768px : Small Devices, Tablets / md-bp
+768px - 992px : Medium Devices, Desktops / lg-bp
+[1200px - 1800px ] is where our normal styles apply (Large Devices, Wide Screens) / xl-bp
+1800 px + : big desktop / xl-bp
+
+$breakpoint argument choices:
+- xs-bp
+- sm-bp
+- md-bp
+- lg-bp
+- xl-bp
+- xxl-bp
+
+
+ORDER : Base + typography > general layout + grid > page layout > components
+*/
+
+@mixin respond($breakpoint) {
+    
+    @if $breakpoint == xs-bp {
+        @media only screen and (max-width: 20em) { @content }; //  320px --> 320/ 16(default font size in browser) and 1em = 16px
+    }
+
+    @if $breakpoint == sm-bp {
+        @media only screen and (max-width: 30em) { @content }; // < 480px 
+    }
+
+    @if $breakpoint == md-bp {
+        @media only screen and (max-width: 48em) { @content }; // < 768px 
+    }
+
+    @if $breakpoint == lg-bp {
+        @media only screen and (max-width: 62em) { @content }; // < 992px 
+    }
+
+    @if $breakpoint == xl-bp {
+        @media only screen and (max-width: 75em) { @content }; // < 1200px 
+    }
+
+    @if $breakpoint == xxl-bp {
+        @media only screen and (min-width: 75em) { @content }; // > 1200px
+    }
+
+}
+

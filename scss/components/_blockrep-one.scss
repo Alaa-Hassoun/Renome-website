@@ -1,0 +1,134 @@
+.blockrep-one-boxright {
+    text-align: left;
+
+    @include respond(sm-bp) {
+        margin-top:45rem;
+    }
+    &__heading1 {
+        font-size: 7rem;
+        color:$color-blue-dark;
+        font-family: $font-family-3;
+        letter-spacing: .5rem;
+    }
+
+    &__heading2 {
+        font-size: 1.6rem;
+        color:$color-red-dark;
+        font-family: $font-family-1-b;
+        text-transform: uppercase;
+        @include respond(sm-bp) {
+            font-size: 2rem;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color:$color-grey-dark;
+        font-family: $font-family-1-r;
+        @include respond(sm-bp) {
+            font-size: 2rem;
+        }
+
+        @include respond(xs-bp) {
+            letter-spacing: 1px;
+
+        }
+
+    }
+
+    &__read-more {
+        &:link,
+        &:visited {
+            font-size: 4rem;
+            color:$color-blue-dark;
+            font-family: $font-family-1-b;
+            letter-spacing: .5rem;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            color:$color-red-dark;
+        }
+
+    }
+
+}
+
+.blockrep-one-boxleft {   
+    position: relative;
+  
+    &__images {
+        position: absolute;
+    }
+
+    &__image {
+        
+        &--p1 {
+            top:-3rem;
+            left:0;
+            transition: all .5s;
+            z-index:10;
+            &:hover {
+                z-index: 10;
+                transform: scale(1.05) translate(-.5rem);
+            }
+            @include respond(lg-bp) {
+                width:80%;
+            }
+
+            @include respond(sm-bp) {
+                width:70%;
+                top:-3rem;
+                left:3rem;
+            }
+
+            @include respond(xs-bp) {
+                width: 98%;
+                top: -3rem;
+                left: -1rem;
+            }
+        }
+
+        &--p2 {
+            top:12rem;
+            left:10%;
+            transition: all .5s;
+            &:hover {
+                z-index: 10;
+                transform: scale(1.05) translate(.5rem);
+            }
+            @include respond(lg-bp) {
+                width:80%;
+            }
+
+            @include respond(sm-bp) {
+                width:70%;
+                top:12rem;
+                left:14rem;
+            }
+
+            @include respond(xs-bp) {
+                width: 98%;
+                top: 12rem;
+                left: 2rem;
+            }
+        }
+
+        &:hover {
+            z-index: 10;
+            transform: scale(1.05);
+        }
+
+      
+
+    }
+
+}

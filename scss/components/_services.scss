@@ -1,0 +1,105 @@
+.services-content {
+
+   
+    &__box {
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $color-grey-light-1;
+        margin-bottom: 0;
+        @include respond(sm-bp) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+        font-size: 2.6rem;
+        font-family: $font-family-1-r;
+        color: $color-blue-dark;
+        list-style: none;
+        line-height: 6;
+
+        @include respond(sm-bp) {
+            flex-direction: column;
+            align-items: center;
+            font-size: 4.6rem;
+            border-bottom: 1px solid $color-grey-light-3;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 3.5rem;
+        }
+
+        &:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            background-color: $color-grey-light-3;
+            position: absolute;
+            right:-8rem;
+            @include respond(lg-bp) {
+                right:-6rem;
+            }
+
+            @include respond(md-bp) {
+                right:-4rem;
+            }
+
+            @include respond(sm-bp) {
+                display:none;
+            }
+        }
+    }
+
+    &__bg {
+        background-image: url(../img/h--bg-services.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:20rem;
+        position: relative;
+        @include respond(sm-bp) {
+            background-position: right;
+            height:40rem;
+        }
+    }
+
+    &__btn {
+        &:link,
+        &:visited {
+            font-size: 1.4rem;
+            font-family: $font-family-1-b;
+            color: $color-white;
+            display: inline-block;
+            padding: 1.5rem 4.5rem;
+            background-color:$color-blue-dark; 
+            text-decoration: none;
+            text-transform: uppercase;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            transition: all .5s;
+            @include respond(sm-bp) {
+                font-size: 2.4rem;
+                padding: 2.5rem 5.5rem;
+            }
+
+            @include respond(xs-bp) {
+                width: 70%;
+            }
+        }
+
+        
+
+        &:hover,
+        &:focus {
+            background-color:$color-red-dark;           
+        }
+    }
+}

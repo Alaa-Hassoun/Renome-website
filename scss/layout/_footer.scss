@@ -1,0 +1,124 @@
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(sm-bp) {
+        flex-direction: column;
+    }
+
+    &__logo {
+        font-family: $font-family-2;
+        font-size: 2.6rem;
+        color:$color-blue-dark;
+        margin: 0;
+        padding: 0;
+        @include respond(sm-bp) {
+            font-size: 3.6rem;
+            margin-bottom: 3.5rem;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 3rem;
+        }
+    }
+
+    &__copyright {
+        font-family:$font-family-3;
+        font-size: 1.6rem;
+        color:$color-blue-dark;
+        text-transform: uppercase;
+        margin: 0;
+        margin-left: 11rem;
+        padding: 0;
+
+        @include respond(sm-bp) {
+            margin-left: 0;
+            font-size: 2.4rem;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 1.5rem;
+        }
+    } 
+
+    &__social-media {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include respond(sm-bp) {
+            flex-direction: column;
+            order: -1;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__heading {
+        font-family:$font-family-1-b;
+        font-size: 1.6rem;
+        color:$color-blue-dark;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+
+        @include respond(sm-bp) {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__icons {
+        margin-left: 1.6rem;
+    }
+
+    &__icon {
+
+       &:link,
+       &:visited {
+        border: 2px solid $color-blue-dark;
+        color:$color-blue-dark;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: transparent;
+        width:3rem;
+        height:3rem;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        text-align: center;
+        cursor: pointer;
+        transition: all .5s;
+        
+        @include respond(sm-bp) {
+            border: 3px solid $color-blue-dark;
+            width: 6rem;
+            height: 6rem;
+            font-size: 3.2rem;
+            line-height: 1.7;
+        }
+
+        @include respond(xs-bp) {
+            width: 5rem;
+            height: 5rem;
+            font-size: 3rem;
+            line-height: 1.6;
+        }
+       }
+
+        &:hover,
+        &:focus {
+            background-color:$color-blue-dark;
+            color:$color-white;
+            
+        }
+
+        &:not(:last-child) {
+            margin-right:1rem;
+            @include respond(sm-bp) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}

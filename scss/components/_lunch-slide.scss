@@ -1,0 +1,186 @@
+.lunch-box {
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__heading {
+        font-size: 6.6rem;
+        font-family: $font-family-3;
+        color:$color-blue-dark;
+        margin-top: 24%;
+        letter-spacing: .5rem;
+        @include respond(md-bp) {
+            margin-top:0;
+            margin-bottom: 4rem;
+        } 
+    }
+
+    &__span {
+        display: block;
+        font-size: 1.6rem;
+        font-family: $font-family-1-b;
+        color:$color-red-dark;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__owl {
+
+    }
+
+    &__item {
+        position: relative;
+
+        
+    }
+
+    //OWL CAROUSEL CLASSES
+    .owl-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:26%;
+        left:-5%;
+    }
+
+    .owl-theme .owl-nav [class*=owl-] {
+        color:$color-blue-dark;
+        margin-bottom: .5rem;
+        padding: 0;
+        background-color:$color-grey-light-3;
+        border-radius:0;
+        border: none;
+        transition: all .5s;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background:$color-blue-dark;
+        color:$color-white;
+    }
+
+    .fa-angle-right:before,
+    .fa-angle-left:before {
+        width: 5.5rem;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .owl-carousel {
+        @include respond(md-bp) {
+            width:80%;
+            margin:0 auto;
+        }
+
+        @include respond(xs-bp) {
+            width:100%;
+        }
+    }
+
+    .owl-dots {
+        @include respond(sm-bp) {
+            position: absolute;
+            bottom: 20rem;
+            left: 14rem;
+            margin-top: 0;
+        }
+        @include respond(xs-bp) {
+            bottom: 17rem;
+            left: 11rem;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        @include respond(sm-bp) {
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border: 2px solid $color-white;
+        }
+
+        @include respond(xs-bp) {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        @include respond(sm-bp) {
+            background: $color-white;
+        }
+    }
+
+    &__price {
+        position: absolute;
+        top:3rem;
+        right:3rem;
+        display: block;
+        padding: 1.5rem 2.5rem;
+        color:$color-blue-dark;
+        font-family: $font-family-1-m;
+        font-size: 2.2rem;
+        background-color: $color-grey-light-3;
+        letter-spacing: .2rem;
+
+        @include respond(xs-bp) {
+            top:2rem;
+            right:2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__meals {
+
+    }
+
+    &__image {
+        width:auto;
+        
+
+        &--p1 {
+            
+        }
+
+        &--p2 {
+            
+        }
+
+        &--p3 {
+            
+        }
+
+        &--p4 {
+           
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-family: $font-family-1-b;
+        color:$color-blue-dark;
+        @include respond(sm-bp) {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 4rem;
+        }
+    }
+
+    &__day {
+        font-size: 2.6rem;
+        font-family: $font-family-4;
+        color:$color-grey-light-3;
+        float: right;
+        @include respond(sm-bp) {
+            display: block;
+            float:none;
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
+    
+}

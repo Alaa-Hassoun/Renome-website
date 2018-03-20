@@ -1,0 +1,74 @@
+.quote-content {
+   
+    &__image-box {
+        text-align: center;
+    }
+
+    &__image {
+       transition: all .5s;
+
+       &:hover {
+           transform: scale(1.1) translateY(1rem);
+       }
+       @include respond(lg-bp) {
+           width:90%;
+       }
+
+       @include respond(xs-bp) {
+            width:100%;
+        }
+        
+    }
+
+    &__block {
+        display: block;
+        text-align: center;
+        border: none;
+        padding-top: 30rem;
+        @include respond(md-bp) {
+            width:120%;
+        }
+
+        @include respond(sm-bp) {
+            width:100%;
+            padding-top: 4rem;
+        }
+    }
+
+    &__text {
+        font-family: $font-family-1-r;
+        font-size: 3.3rem;
+        color:$color-blue-dark;
+        @include respond(sm-bp) {
+            font-size: 4.3rem;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 2.9rem;
+        }
+    }
+
+    &__span {
+        display: block;
+        
+    }
+
+    &__author {
+        font-size: 1.6rem;
+        font-family: $font-family-3;
+        color: $color-blue-dark;
+        text-transform: uppercase;
+        @include respond(sm-bp) {
+            font-size: 2.6rem;
+        }
+
+        @include respond(xs-bp) {
+            font-size: 2.2rem;
+        }
+    
+        &::before {
+            content: none;
+        } 
+    }
+
+}

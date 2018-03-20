@@ -1,0 +1,51 @@
+.blockrep-one {
+    background-color:$color-white;
+    padding:9rem 0;
+}
+
+.section-lunch {
+    background-color:$color-grey-light-1;
+    padding:10rem 0;
+}
+
+.blockrep-two {
+    background-color:$color-white;
+    padding:9rem 0 ;
+}
+
+.section-quote {
+    background-image: linear-gradient(180deg, $color-white 0%, $color-white 40%, $color-grey-light-1 40%);
+    padding: 0 0 9rem 0;
+}
+
+.section-reservation {
+    background-color:$color-white;
+    padding:9rem 0;
+}
+
+.section-services {
+    padding:9rem 0;
+}
+
+.section-blog {
+    background-image: linear-gradient(180deg, $color-white 0%, $color-white 60%, $color-grey-light-1 60%);
+    padding: 9rem 0;
+
+    @include respond(md-bp) {
+        background-image: linear-gradient(180deg, $color-white 0%, $color-white 45%, $color-grey-light-1 45%);
+    }
+}
+
+.section-contact {
+    background-color:$color-white;
+    padding:9rem 0 15rem 0;
+}
+
+.section-footer {
+    background-color:$color-grey-light-1;
+    padding:4.5rem;
+
+    @include respond(sm-bp) {
+        padding: 7rem 0;
+    }
+}

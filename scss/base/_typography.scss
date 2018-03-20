@@ -1,0 +1,23 @@
+body {
+    font-family: $font-family-1-r , $default-font-family;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-blue-dark;
+    
+}
+
+.heading-secondary {
+    font-size: 6.6rem;
+    font-family: $font-family-3;
+    color:$color-blue-dark;
+    text-align: center;
+    margin-bottom:5rem;
+
+    &--text {
+        display: block;
+        font-size: 1.6rem;
+        font-family: $font-family-1-b;
+        color:$color-red-dark;
+        text-transform: uppercase;
+    }
+}
