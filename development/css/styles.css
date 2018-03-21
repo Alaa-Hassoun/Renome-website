@@ -281,6 +281,10 @@ body {
     .blockrep-one-boxleft__image--p1:hover {
       z-index: 10;
       transform: scale(1.05) translate(-0.5rem); }
+    @media only screen and (max-width: 75em) {
+      /* line 74, ../scss/components/_blockrep-one.scss */
+      .blockrep-one-boxleft__image--p1 {
+        width: 80%; } }
     @media only screen and (max-width: 62em) {
       /* line 74, ../scss/components/_blockrep-one.scss */
       .blockrep-one-boxleft__image--p1 {
@@ -297,32 +301,36 @@ body {
         width: 98%;
         top: -3rem;
         left: -1rem; } }
-  /* line 100, ../scss/components/_blockrep-one.scss */
+  /* line 104, ../scss/components/_blockrep-one.scss */
   .blockrep-one-boxleft__image--p2 {
     top: 12rem;
     left: 10%;
     transition: all .5s; }
-    /* line 104, ../scss/components/_blockrep-one.scss */
+    /* line 108, ../scss/components/_blockrep-one.scss */
     .blockrep-one-boxleft__image--p2:hover {
       z-index: 10;
       transform: scale(1.05) translate(0.5rem); }
+    @media only screen and (max-width: 75em) {
+      /* line 104, ../scss/components/_blockrep-one.scss */
+      .blockrep-one-boxleft__image--p2 {
+        width: 80%; } }
     @media only screen and (max-width: 62em) {
-      /* line 100, ../scss/components/_blockrep-one.scss */
+      /* line 104, ../scss/components/_blockrep-one.scss */
       .blockrep-one-boxleft__image--p2 {
         width: 80%; } }
     @media only screen and (max-width: 30em) {
-      /* line 100, ../scss/components/_blockrep-one.scss */
+      /* line 104, ../scss/components/_blockrep-one.scss */
       .blockrep-one-boxleft__image--p2 {
         width: 70%;
         top: 12rem;
         left: 14rem; } }
     @media only screen and (max-width: 20em) {
-      /* line 100, ../scss/components/_blockrep-one.scss */
+      /* line 104, ../scss/components/_blockrep-one.scss */
       .blockrep-one-boxleft__image--p2 {
         width: 98%;
         top: 12rem;
         left: 2rem; } }
-  /* line 125, ../scss/components/_blockrep-one.scss */
+  /* line 134, ../scss/components/_blockrep-one.scss */
   .blockrep-one-boxleft__image:hover {
     z-index: 10;
     transform: scale(1.05); }
@@ -397,6 +405,10 @@ body {
     .blockrep-two-boxright__image--p1:hover {
       z-index: 10;
       transform: scale(1.05) translate(-0.5rem); }
+    @media only screen and (max-width: 75em) {
+      /* line 74, ../scss/components/_blockrep-two.scss */
+      .blockrep-two-boxright__image--p1 {
+        width: 80%; } }
     @media only screen and (max-width: 62em) {
       /* line 74, ../scss/components/_blockrep-two.scss */
       .blockrep-two-boxright__image--p1 {
@@ -413,32 +425,36 @@ body {
         width: 98%;
         top: -3rem;
         left: -1rem; } }
-  /* line 100, ../scss/components/_blockrep-two.scss */
+  /* line 105, ../scss/components/_blockrep-two.scss */
   .blockrep-two-boxright__image--p2 {
     top: 10rem;
     left: 10%;
     transition: all .5s; }
-    /* line 104, ../scss/components/_blockrep-two.scss */
+    /* line 109, ../scss/components/_blockrep-two.scss */
     .blockrep-two-boxright__image--p2:hover {
       z-index: 10;
       transform: scale(1.05) translate(0.5rem); }
+    @media only screen and (max-width: 75em) {
+      /* line 105, ../scss/components/_blockrep-two.scss */
+      .blockrep-two-boxright__image--p2 {
+        width: 80%; } }
     @media only screen and (max-width: 62em) {
-      /* line 100, ../scss/components/_blockrep-two.scss */
+      /* line 105, ../scss/components/_blockrep-two.scss */
       .blockrep-two-boxright__image--p2 {
         width: 80%; } }
     @media only screen and (max-width: 30em) {
-      /* line 100, ../scss/components/_blockrep-two.scss */
+      /* line 105, ../scss/components/_blockrep-two.scss */
       .blockrep-two-boxright__image--p2 {
         width: 70%;
         top: 12rem;
         left: 14rem; } }
     @media only screen and (max-width: 20em) {
-      /* line 100, ../scss/components/_blockrep-two.scss */
+      /* line 105, ../scss/components/_blockrep-two.scss */
       .blockrep-two-boxright__image--p2 {
         width: 98%;
         top: 12rem;
         left: 2rem; } }
-  /* line 125, ../scss/components/_blockrep-two.scss */
+  /* line 135, ../scss/components/_blockrep-two.scss */
   .blockrep-two-boxright__image:hover {
     z-index: 10;
     transform: scale(1.05); }
@@ -564,44 +580,58 @@ body {
 /* line 2, ../scss/components/_gallery.scss */
 .gallery__images {
   display: flex; }
+  @media only screen and (max-width: 30em) {
+    /* line 2, ../scss/components/_gallery.scss */
+    .gallery__images {
+      flex-direction: column-reverse;
+      margin-bottom: 6rem; } }
   @media only screen and (max-width: 20em) {
     /* line 2, ../scss/components/_gallery.scss */
     .gallery__images {
-      flex-direction: column-reverse; } }
-/* line 9, ../scss/components/_gallery.scss */
+      flex-direction: column-reverse;
+      margin-bottom: 6rem; } }
+/* line 16, ../scss/components/_gallery.scss */
 .gallery__link {
   transition: all 1s; }
-  /* line 12, ../scss/components/_gallery.scss */
+  /* line 18, ../scss/components/_gallery.scss */
   .gallery__link:not(:last-child) {
     margin-right: -25rem; }
-    @media only screen and (max-width: 20em) {
-      /* line 12, ../scss/components/_gallery.scss */
+    @media only screen and (max-width: 30em) {
+      /* line 18, ../scss/components/_gallery.scss */
       .gallery__link:not(:last-child) {
         margin-right: 0; } }
-  /* line 19, ../scss/components/_gallery.scss */
+    @media only screen and (max-width: 20em) {
+      /* line 18, ../scss/components/_gallery.scss */
+      .gallery__link:not(:last-child) {
+        margin-right: 0; } }
+  /* line 29, ../scss/components/_gallery.scss */
   .gallery__link:hover {
     z-index: 1;
     transform: scale(1.1); }
+  @media only screen and (max-width: 30em) {
+    /* line 35, ../scss/components/_gallery.scss */
+    .gallery__link:not(:first-child) {
+      margin-bottom: -12rem; } }
   @media only screen and (max-width: 20em) {
-    /* line 25, ../scss/components/_gallery.scss */
+    /* line 41, ../scss/components/_gallery.scss */
     .gallery__link:not(:first-child) {
       margin-bottom: -9rem; } }
-/* line 32, ../scss/components/_gallery.scss */
+/* line 48, ../scss/components/_gallery.scss */
 .gallery__pic {
   width: 100%; }
   @media only screen and (max-width: 75em) {
-    /* line 32, ../scss/components/_gallery.scss */
+    /* line 48, ../scss/components/_gallery.scss */
     .gallery__pic {
       width: 100%; } }
   @media only screen and (max-width: 20em) {
-    /* line 32, ../scss/components/_gallery.scss */
+    /* line 48, ../scss/components/_gallery.scss */
     .gallery__pic {
       width: 100%; } }
-/* line 44, ../scss/components/_gallery.scss */
+/* line 60, ../scss/components/_gallery.scss */
 .gallery__link:hover > .gallery__pic {
   z-index: 1;
   transform: scale(1); }
-/* line 50, ../scss/components/_gallery.scss */
+/* line 66, ../scss/components/_gallery.scss */
 .gallery__hours-bg {
   display: flex;
   flex-direction: column;
@@ -610,7 +640,15 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid #dcdee0; }
-/* line 60, ../scss/components/_gallery.scss */
+  @media only screen and (max-width: 30em) {
+    /* line 66, ../scss/components/_gallery.scss */
+    .gallery__hours-bg {
+      padding: 4rem 0; } }
+  @media only screen and (max-width: 20em) {
+    /* line 66, ../scss/components/_gallery.scss */
+    .gallery__hours-bg {
+      padding: 6rem 0; } }
+/* line 84, ../scss/components/_gallery.scss */
 .gallery__heading {
   font-size: 1.6rem;
   font-family: "Montserrat-Bold";
@@ -618,13 +656,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1.5rem; }
-/* line 69, ../scss/components/_gallery.scss */
+/* line 93, ../scss/components/_gallery.scss */
 .gallery__days {
   font-size: 1.6rem;
   font-family: "Montserrat-Bold";
   color: #1e2633;
   text-transform: uppercase; }
-/* line 76, ../scss/components/_gallery.scss */
+/* line 100, ../scss/components/_gallery.scss */
 .gallery__hours {
   display: block;
   font-size: 1.6rem;
@@ -632,33 +670,43 @@ body {
   color: #1e2633;
   text-align: center; }
 
-/* line 88, ../scss/components/_gallery.scss */
+/* line 112, ../scss/components/_gallery.scss */
 .lightboxOverlay {
   z-index: 9999999; }
 
-/* line 92, ../scss/components/_gallery.scss */
+/* line 116, ../scss/components/_gallery.scss */
 .lightbox {
   z-index: 99999999; }
 
-/* line 96, ../scss/components/_gallery.scss */
+/* line 120, ../scss/components/_gallery.scss */
 .lb-data .lb-close {
   background-image: url(../img/close.png); }
 
-/* line 100, ../scss/components/_gallery.scss */
+/* line 124, ../scss/components/_gallery.scss */
 .lb-closeContainer {
   position: absolute;
   top: -8%;
   right: 17rem; }
+  @media only screen and (max-width: 30em) {
+    /* line 124, ../scss/components/_gallery.scss */
+    .lb-closeContainer {
+      top: -16%;
+      right: 2rem; } }
+  @media only screen and (max-width: 20em) {
+    /* line 124, ../scss/components/_gallery.scss */
+    .lb-closeContainer {
+      top: -22%;
+      right: 1rem; } }
 
-/* line 106, ../scss/components/_gallery.scss */
+/* line 139, ../scss/components/_gallery.scss */
 .lb-nav a.lb-prev {
   background-image: url(../img/prev.png); }
 
-/* line 110, ../scss/components/_gallery.scss */
+/* line 143, ../scss/components/_gallery.scss */
 .lb-nav a.lb-next {
   background-image: url(../img/next.png); }
 
-/* line 114, ../scss/components/_gallery.scss */
+/* line 147, ../scss/components/_gallery.scss */
 .lb-cancel {
   background-image: url(../img/loading.gif); }
 
@@ -1240,6 +1288,11 @@ body {
     position: absolute;
     bottom: -55rem;
     left: 0; }
+    /* line 3, ../scss/abstracts/_mixins.scss */
+    .header-bgtwo__heading-box::after {
+      content: "";
+      display: table;
+      clear: both; }
   /* line 126, ../scss/layout/_header.scss */
   .header-bgtwo__heading {
     font-size: 6.6rem;
@@ -1251,6 +1304,14 @@ body {
       font-family: "Montserrat-Bold";
       color: #985e5b;
       display: block; }
+      @media only screen and (max-width: 30em) {
+        /* line 131, ../scss/layout/_header.scss */
+        .header-bgtwo__heading--color {
+          width: 102%; } }
+      @media only screen and (max-width: 20em) {
+        /* line 131, ../scss/layout/_header.scss */
+        .header-bgtwo__heading--color {
+          width: 102%; } }
 
 /* line 2, ../scss/layout/_navigation-mob.scss */
 .header-mob {

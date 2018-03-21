@@ -1,16 +1,26 @@
 .gallery {
     &__images {
         display: flex;
+
+        @include respond(sm-bp) {
+            flex-direction: column-reverse;
+            margin-bottom: 6rem;
+        }
+
         @include respond(xs-bp) {
             flex-direction: column-reverse;
+            margin-bottom: 6rem;
         }
     }
 
     &__link {
         transition: all 1s;
-        // backface-visibility: hidden;
         &:not(:last-child) {
             margin-right: -25rem;
+            @include respond(sm-bp) {
+                margin-right: 0;
+            }
+
             @include respond(xs-bp) {
                 margin-right: 0;
             }
@@ -19,6 +29,12 @@
         &:hover {
             z-index: 1;
             transform: scale(1.1);
+        }
+
+        @include respond(sm-bp) {
+            &:not(:first-child) {
+                margin-bottom: -12rem;
+            }
         }
 
         @include respond(xs-bp) {
@@ -55,6 +71,14 @@
         width: 100%;
         height: 100%;
         border: 1px solid $color-grey-light-3;
+
+        @include respond(sm-bp) {
+            padding: 4rem 0;
+        }
+
+        @include respond(xs-bp) {
+            padding: 6rem 0;
+        }
     }
 
     &__heading {
@@ -101,6 +125,15 @@
     position: absolute;
     top: -8%;
     right: 17rem;
+    @include respond(sm-bp) {
+        top: -16%;
+        right: 2rem;
+    }
+
+    @include respond(xs-bp) {
+        top: -22%;
+        right: 1rem;
+    }
 }
 
 .lb-nav a.lb-prev {

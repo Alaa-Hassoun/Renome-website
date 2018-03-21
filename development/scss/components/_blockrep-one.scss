@@ -80,6 +80,10 @@
                 z-index: 10;
                 transform: scale(1.05) translate(-.5rem);
             }
+            @include respond(xl-bp) {
+                width:80%;
+            }
+
             @include respond(lg-bp) {
                 width:80%;
             }
@@ -105,6 +109,11 @@
                 z-index: 10;
                 transform: scale(1.05) translate(.5rem);
             }
+
+            @include respond(xl-bp) {
+                width:80%;
+            }
+            
             @include respond(lg-bp) {
                 width:80%;
             }
