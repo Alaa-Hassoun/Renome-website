@@ -550,7 +550,7 @@ body {
 .blog-content__text {
   font-family: "Axis";
   font-size: 1.6rem;
-  color: #000;
+  color: orangered;
   text-transform: uppercase; }
   @media only screen and (max-width: 30em) {
     /* line 93, ../scss/components/_blog.scss */
@@ -923,7 +923,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 69, 0, 0.5);
   z-index: 999999;
   opacity: 0;
   visibility: hidden; }
@@ -1317,7 +1317,7 @@ body {
 .header-mob {
   position: fixed;
   z-index: 99999;
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.22);
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(255, 69, 0, 0.22);
   background-color: #fff;
   width: 100%;
   padding: 3rem 0;
@@ -1371,13 +1371,13 @@ body {
   /* line 56, ../scss/layout/_navigation-mob.scss */
   .header-mob__logo {
     font-size: 3.5rem;
-    color: #000;
+    color: orangered;
     font-family: "Pacifico";
     margin-top: 0;
     margin-bottom: 0; }
   /* line 65, ../scss/layout/_navigation-mob.scss */
   .header-mob__link:link, .header-mob__link:visited {
-    color: #000;
+    color: orangered;
     text-decoration: none;
     transition: color .5s; }
   /* line 72, ../scss/layout/_navigation-mob.scss */
@@ -1426,7 +1426,7 @@ body {
   /* line 132, ../scss/layout/_navigation-mob.scss */
   .header-mob__shop:link, .header-mob__shop:visited {
     font-size: 1.6rem;
-    color: #000;
+    color: orangered;
     transition: all .5s; }
   /* line 140, ../scss/layout/_navigation-mob.scss */
   .header-mob__shop:hover, .header-mob__shop:focus {
@@ -1446,7 +1446,7 @@ body {
     display: inline-block;
     width: 2px;
     height: 2rem;
-    background-color: #000; }
+    background-color: orangered; }
   /* line 166, ../scss/layout/_navigation-mob.scss */
   .header-mob__navigation {
     z-index: 99999; }
@@ -1472,7 +1472,7 @@ body {
       .header-mob__navigation-icon, .header-mob__navigation-icon::before, .header-mob__navigation-icon::after {
         width: 2.5rem;
         height: 2px;
-        background-color: #000;
+        background-color: orangered;
         display: inline-block; }
       /* line 199, ../scss/layout/_navigation-mob.scss */
       .header-mob__navigation-icon::before, .header-mob__navigation-icon::after {
@@ -1506,7 +1506,7 @@ body {
     /* line 234, ../scss/layout/_navigation-mob.scss */
     .header-mob__navigation-link:link, .header-mob__navigation-link:visited {
       text-decoration: none;
-      color: #000;
+      color: orangered;
       font-size: 1.6rem;
       text-transform: uppercase;
       font-family: "Montserrat-Bold";
@@ -1585,7 +1585,7 @@ body {
       background: transparent;
       border: none;
       font-size: 2rem;
-      color: #000;
+      color: orangered;
       margin-right: 1rem;
       transition: all .3s;
       cursor: pointer; }
@@ -1597,7 +1597,7 @@ body {
 .header {
   position: fixed;
   z-index: 999999;
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.22);
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(255, 69, 0, 0.22);
   background-color: #fff;
   width: 100%;
   padding: 3rem 0;
@@ -1651,13 +1651,13 @@ body {
   /* line 57, ../scss/layout/_navigation.scss */
   .header__logo {
     font-size: 3.5rem;
-    color: #000;
+    color: orangered;
     font-family: "Pacifico";
     margin-top: 0;
     margin-bottom: 0; }
   /* line 67, ../scss/layout/_navigation.scss */
   .header__link:link, .header__link:visited {
-    color: #000;
+    color: orangered;
     text-decoration: none;
     transition: color .5s; }
   /* line 74, ../scss/layout/_navigation.scss */
@@ -1689,7 +1689,7 @@ body {
   /* line 110, ../scss/layout/_navigation.scss */
   .header__navigation-link:link, .header__navigation-link:visited {
     text-decoration: none;
-    color: #000;
+    color: orangered;
     font-size: 1.6rem;
     text-transform: uppercase;
     font-family: "Montserrat-Bold";
@@ -1742,11 +1742,11 @@ body {
     display: inline-block;
     width: 2px;
     height: 60%;
-    background-color: #000; }
+    background-color: orangered; }
   /* line 197, ../scss/layout/_navigation.scss */
   .header__search:link, .header__search:visited, .header__shop:link, .header__shop:visited {
     font-size: 1.6rem;
-    color: #000;
+    color: orangered;
     transition: all .5s; }
   /* line 204, ../scss/layout/_navigation.scss */
   .header__search:hover, .header__search:focus, .header__shop:hover, .header__shop:focus {
