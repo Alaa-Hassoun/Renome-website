@@ -103,6 +103,15 @@ body {
     color: #985e5b;
     text-transform: uppercase; }
 
+/* line 25, ../scss/base/_typography.scss */
+.heading-tertiary {
+  font-size: 4rem;
+  font-family: "Montserrat-Bold";
+  color: #1e2633;
+  text-align: center;
+  text-transform: uppercase;
+  border-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #ff4500 50%, rgba(0, 0, 0, 0) 50%); }
+
 /* line 1, ../scss/base/_utilities.scss */
 .u-center-text {
   text-align: center !important; }
@@ -577,6 +586,34 @@ body {
   text-decoration: none;
   color: #985e5b; }
 
+/* line 2, ../scss/components/_buttons.scss */
+.button-one:link, .button-one:visited {
+  font-size: 1.4rem;
+  font-family: "Montserrat-Bold";
+  color: #fff;
+  display: inline-block;
+  padding: 1.5rem 4.5rem;
+  background-color: #1e2633;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s; }
+  @media only screen and (max-width: 30em) {
+    /* line 2, ../scss/components/_buttons.scss */
+    .button-one:link, .button-one:visited {
+      font-size: 2.4rem;
+      padding: 2.5rem 5.5rem; } }
+  @media only screen and (max-width: 20em) {
+    /* line 2, ../scss/components/_buttons.scss */
+    .button-one:link, .button-one:visited {
+      width: 70%; } }
+/* line 29, ../scss/components/_buttons.scss */
+.button-one:hover, .button-one:focus {
+  background-color: #985e5b; }
+
 /* line 2, ../scss/components/_gallery.scss */
 .gallery__images {
   display: flex; }
@@ -849,6 +886,65 @@ body {
       float: none;
       font-size: 3rem;
       margin-top: 2rem; } }
+
+/* line 1, ../scss/components/_make-reservation.scss */
+.reservation {
+  margin-top: 10rem; }
+  /* line 4, ../scss/components/_make-reservation.scss */
+  .reservation__form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  /* line 18, ../scss/components/_make-reservation.scss */
+  .reservation__icons {
+    font-size: 2rem;
+    color: #1e2633;
+    margin-right: 2rem; }
+  /* line 24, ../scss/components/_make-reservation.scss */
+  .reservation__calendar-input {
+    border-bottom: 1px solid #dcdee0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 1.5rem;
+    color: #1e2633;
+    font-family: "Montserrat-Bold";
+    width: 12.5rem; }
+  /* line 43, ../scss/components/_make-reservation.scss */
+  .reservation__hours-input {
+    border-bottom: 1px solid #dcdee0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 1.5rem;
+    color: #1e2633;
+    font-family: "Montserrat-Bold";
+    width: 12.5rem; }
+  /* line 62, ../scss/components/_make-reservation.scss */
+  .reservation__select {
+    border-bottom: 1px solid #dcdee0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 1.5rem;
+    color: #1e2633;
+    font-family: "Montserrat-Bold";
+    width: 12.5rem;
+    appearance: none; }
+  /* line 81, ../scss/components/_make-reservation.scss */
+  .reservation [type="date"]::after {
+    content: "\f078";
+    display: block;
+    font-family: "FontAwesome"; }
+  /* line 87, ../scss/components/_make-reservation.scss */
+  .reservation [type="date"]::-webkit-inner-spin-button,
+  .reservation [type="time"]::-webkit-inner-spin-button,
+  .reservation [type="date"]::-webkit-clear-button,
+  .reservation [type="time"]::-webkit-clear-button {
+    display: none; }
+  /* line 94, ../scss/components/_make-reservation.scss */
+  .reservation [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0; }
 
 /* line 3, ../scss/components/_quote.scss */
 .quote-content__image-box {
@@ -1847,3 +1943,7 @@ body {
     /* line 44, ../scss/pages/_home.scss */
     .section-footer {
       padding: 7rem 0; } }
+
+/* line 1, ../scss/pages/_reservation.scss */
+.section-reservation {
+  padding: 10rem 0; }

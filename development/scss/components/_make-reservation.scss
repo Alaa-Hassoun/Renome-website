@@ -1,0 +1,101 @@
+.reservation {
+    margin-top:10rem;
+
+    &__form {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__calendar {
+
+    }
+
+    &__calendar-label {
+
+    }
+
+    &__icons {
+        font-size: 2rem;
+        color: $color-blue-dark;
+        margin-right: 2rem;
+    }
+
+    &__calendar-input {
+        border-bottom: 1px solid $color-grey-light-3;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        font-size: 1.5rem;
+        color: $color-blue-dark;
+        font-family: $font-family-1-b;
+        width:12.5rem;
+    }
+
+    &__hours {
+
+    }
+
+    &__hours-label {
+
+    }
+
+    &__hours-input {
+        border-bottom: 1px solid $color-grey-light-3;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        font-size: 1.5rem;
+        color: $color-blue-dark;
+        font-family: $font-family-1-b;
+        width:12.5rem;
+    }
+
+    &__people {
+
+    }
+
+    &__people-label {
+
+    }
+
+    &__select {
+        border-bottom: 1px solid $color-grey-light-3;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        font-size: 1.5rem;
+        color: $color-blue-dark;
+        font-family: $font-family-1-b;
+        width:12.5rem;
+
+        appearance: none;
+    }
+
+    &__option {
+
+    }
+
+    //input classes
+
+    [type="date"]::after {
+        content: "\f078";
+        display: block;
+        font-family: "FontAwesome";
+    }
+
+    [type="date"]::-webkit-inner-spin-button,
+    [type="time"]::-webkit-inner-spin-button,
+    [type="date"]::-webkit-clear-button,
+    [type="time"]::-webkit-clear-button {
+        display: none;
+    }
+
+    [type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+
+
+
+}

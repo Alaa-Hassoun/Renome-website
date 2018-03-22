@@ -21,3 +21,12 @@ body {
         text-transform: uppercase;
     }
 }
+
+.heading-tertiary {
+    font-size: 4rem;
+    font-family: $font-family-1-b;
+    color:$color-blue-dark;
+    text-align: center;
+    text-transform: uppercase;
+    border-image: linear-gradient(90deg, transparent 0%, orangered 50%, transparent 50%);
+}
