@@ -107,9 +107,8 @@
 
 }
 
-// ABOUT BACKGROUND
+// HEADER BACKGROUND
 .header-bgtwo {
-    background-image: url(../img/a-background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -144,4 +143,15 @@
         }
     }
 
+}
+
+
+// ABOUT BACKGROUND
+.header-bgtwo-about {
+    background-image: url(../img/a-background.jpg);
+}
+
+// RESRVATION BACKGROUND
+.header-bgtwo-reservation {
+    background-image: url(../img/r-background.jpg);
 }

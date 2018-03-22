@@ -1276,13 +1276,12 @@ body {
 
 /* line 111, ../scss/layout/_header.scss */
 .header-bgtwo {
-  background-image: url(../img/a-background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative; }
-  /* line 118, ../scss/layout/_header.scss */
+  /* line 117, ../scss/layout/_header.scss */
   .header-bgtwo__heading-box {
     display: block;
     position: absolute;
@@ -1293,25 +1292,33 @@ body {
       content: "";
       display: table;
       clear: both; }
-  /* line 126, ../scss/layout/_header.scss */
+  /* line 125, ../scss/layout/_header.scss */
   .header-bgtwo__heading {
     font-size: 6.6rem;
     font-family: "Axis";
     color: #fff; }
-    /* line 131, ../scss/layout/_header.scss */
+    /* line 130, ../scss/layout/_header.scss */
     .header-bgtwo__heading--color {
       font-size: 4rem;
       font-family: "Montserrat-Bold";
       color: #985e5b;
       display: block; }
       @media only screen and (max-width: 30em) {
-        /* line 131, ../scss/layout/_header.scss */
+        /* line 130, ../scss/layout/_header.scss */
         .header-bgtwo__heading--color {
           width: 102%; } }
       @media only screen and (max-width: 20em) {
-        /* line 131, ../scss/layout/_header.scss */
+        /* line 130, ../scss/layout/_header.scss */
         .header-bgtwo__heading--color {
           width: 102%; } }
+
+/* line 150, ../scss/layout/_header.scss */
+.header-bgtwo-about {
+  background-image: url(../img/a-background.jpg); }
+
+/* line 155, ../scss/layout/_header.scss */
+.header-bgtwo-reservation {
+  background-image: url(../img/r-background.jpg); }
 
 /* line 2, ../scss/layout/_navigation-mob.scss */
 .header-mob {
