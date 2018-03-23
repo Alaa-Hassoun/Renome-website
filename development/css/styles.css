@@ -586,33 +586,33 @@ body {
   text-decoration: none;
   color: #985e5b; }
 
-/* line 2, ../scss/components/_buttons.scss */
-.button-one:link, .button-one:visited {
-  font-size: 1.4rem;
-  font-family: "Montserrat-Bold";
-  color: #fff;
-  display: inline-block;
-  padding: 1.5rem 4.5rem;
-  background-color: #1e2633;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all .5s; }
-  @media only screen and (max-width: 30em) {
-    /* line 2, ../scss/components/_buttons.scss */
-    .button-one:link, .button-one:visited {
-      font-size: 2.4rem;
-      padding: 2.5rem 5.5rem; } }
-  @media only screen and (max-width: 20em) {
-    /* line 2, ../scss/components/_buttons.scss */
-    .button-one:link, .button-one:visited {
-      width: 70%; } }
-/* line 29, ../scss/components/_buttons.scss */
-.button-one:hover, .button-one:focus {
-  background-color: #985e5b; }
+/* line 1, ../scss/components/_buttons.scss */
+.button-box {
+  display: flex;
+  justify-content: center; }
+  /* line 5, ../scss/components/_buttons.scss */
+  .button-box__btn {
+    font-size: 1.4rem;
+    font-family: "Montserrat-Bold";
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem 4.5rem;
+    background-color: #1e2633;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 6rem;
+    transition: all .5s; }
+    /* line 19, ../scss/components/_buttons.scss */
+    .button-box__btn:hover, .button-box__btn:focus {
+      background-color: #985e5b;
+      outline: none; }
+    @media only screen and (max-width: 30em) {
+      /* line 5, ../scss/components/_buttons.scss */
+      .button-box__btn {
+        font-size: 1.6rem;
+        padding: 2rem 5.5rem; } }
 
 /* line 2, ../scss/components/_gallery.scss */
 .gallery__images {
@@ -895,13 +895,44 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
-  /* line 18, ../scss/components/_make-reservation.scss */
+    @media only screen and (max-width: 30em) {
+      /* line 4, ../scss/components/_make-reservation.scss */
+      .reservation__form {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset; } }
+  /* line 16, ../scss/components/_make-reservation.scss */
+  .reservation__calendar, .reservation__people {
+    position: relative;
+    z-index: 1; }
+    /* line 20, ../scss/components/_make-reservation.scss */
+    .reservation__calendar::after, .reservation__people::after {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      display: block;
+      content: "\f078";
+      font-family: "FontAwesome";
+      font-size: 1.5rem; }
+  @media only screen and (max-width: 30em) {
+    /* line 32, ../scss/components/_make-reservation.scss */
+    .reservation__calendar {
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 30em) {
+    /* line 38, ../scss/components/_make-reservation.scss */
+    .reservation__calendar-label {
+      width: 10%; } }
+  /* line 44, ../scss/components/_make-reservation.scss */
   .reservation__icons {
     font-size: 2rem;
     color: #1e2633;
     margin-right: 2rem; }
-  /* line 24, ../scss/components/_make-reservation.scss */
-  .reservation__calendar-input {
+    @media only screen and (max-width: 30em) {
+      /* line 44, ../scss/components/_make-reservation.scss */
+      .reservation__icons {
+        font-size: 3rem; } }
+  /* line 53, ../scss/components/_make-reservation.scss */
+  .reservation__calendar-input, .reservation__hours-input, .reservation__select {
     border-bottom: 1px solid #dcdee0;
     border-top: 0;
     border-left: 0;
@@ -909,42 +940,36 @@ body {
     font-size: 1.5rem;
     color: #1e2633;
     font-family: "Montserrat-Bold";
-    width: 12.5rem; }
-  /* line 43, ../scss/components/_make-reservation.scss */
-  .reservation__hours-input {
-    border-bottom: 1px solid #dcdee0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    font-size: 1.5rem;
-    color: #1e2633;
-    font-family: "Montserrat-Bold";
-    width: 12.5rem; }
-  /* line 62, ../scss/components/_make-reservation.scss */
-  .reservation__select {
-    border-bottom: 1px solid #dcdee0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    font-size: 1.5rem;
-    color: #1e2633;
-    font-family: "Montserrat-Bold";
-    width: 12.5rem;
-    appearance: none; }
-  /* line 81, ../scss/components/_make-reservation.scss */
-  .reservation [type="date"]::after {
-    content: "\f078";
-    display: block;
-    font-family: "FontAwesome"; }
+    width: 13.5rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      /* line 53, ../scss/components/_make-reservation.scss */
+      .reservation__calendar-input, .reservation__hours-input, .reservation__select {
+        font-size: 2rem;
+        width: 85%;
+        float: right; } }
+  @media only screen and (max-width: 30em) {
+    /* line 73, ../scss/components/_make-reservation.scss */
+    .reservation__hours {
+      margin-bottom: 4rem; } }
   /* line 87, ../scss/components/_make-reservation.scss */
+  .reservation__select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none; }
+  /* line 105, ../scss/components/_make-reservation.scss */
   .reservation [type="date"]::-webkit-inner-spin-button,
   .reservation [type="time"]::-webkit-inner-spin-button,
   .reservation [type="date"]::-webkit-clear-button,
   .reservation [type="time"]::-webkit-clear-button {
     display: none; }
-  /* line 94, ../scss/components/_make-reservation.scss */
+  /* line 112, ../scss/components/_make-reservation.scss */
   .reservation [type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0; }
+    opacity: 0;
+    padding: 1rem 1.5rem;
+    cursor: pointer; }
 
 /* line 3, ../scss/components/_quote.scss */
 .quote-content__image-box {

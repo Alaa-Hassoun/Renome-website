@@ -5,60 +5,53 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
+        @include respond(sm-bp) {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: unset;
+        }
+    }
+
+    &__calendar,
+    &__people {
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            right: 0;
+            top: 0px;
+            display: block;
+            content: "\f078";
+            font-family: "FontAwesome";
+            font-size: 1.5rem;
+        }
+        
     }
 
     &__calendar {
-
+        @include respond(sm-bp) {
+            margin-bottom: 4rem;
+        }
     }
 
     &__calendar-label {
-
+        @include respond(sm-bp) {
+            width:10%;
+        }
     }
 
     &__icons {
         font-size: 2rem;
         color: $color-blue-dark;
         margin-right: 2rem;
+        @include respond(sm-bp) {
+            font-size: 3rem;
+        }
     }
 
-    &__calendar-input {
-        border-bottom: 1px solid $color-grey-light-3;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        font-size: 1.5rem;
-        color: $color-blue-dark;
-        font-family: $font-family-1-b;
-        width:12.5rem;
-    }
-
-    &__hours {
-
-    }
-
-    &__hours-label {
-
-    }
-
-    &__hours-input {
-        border-bottom: 1px solid $color-grey-light-3;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        font-size: 1.5rem;
-        color: $color-blue-dark;
-        font-family: $font-family-1-b;
-        width:12.5rem;
-    }
-
-    &__people {
-
-    }
-
-    &__people-label {
-
-    }
-
+    &__calendar-input,
+    &__hours-input,
     &__select {
         border-bottom: 1px solid $color-grey-light-3;
         border-top: 0;
@@ -67,9 +60,34 @@
         font-size: 1.5rem;
         color: $color-blue-dark;
         font-family: $font-family-1-b;
-        width:12.5rem;
+        width:13.5rem;
+        cursor: pointer;
 
-        appearance: none;
+        @include respond(sm-bp) {
+            font-size: 2rem;
+            width: 85%;
+            float: right;   
+        }
+    }
+
+    &__hours {
+        @include respond(sm-bp) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__hours-label {
+
+    }
+
+    &__people-label {
+
+    }
+
+    &__select {
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
     }
 
     &__option {
@@ -78,11 +96,11 @@
 
     //input classes
 
-    [type="date"]::after {
-        content: "\f078";
-        display: block;
-        font-family: "FontAwesome";
-    }
+    // [type="date"]::after {
+    //     content: "\f078";
+    //     display: block;
+    //     font-family: "FontAwesome";
+    // }
 
     [type="date"]::-webkit-inner-spin-button,
     [type="time"]::-webkit-inner-spin-button,
@@ -92,7 +110,9 @@
     }
 
     [type="date"]::-webkit-calendar-picker-indicator {
-        opacity: 0;
+      opacity:0;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
     }
 
 

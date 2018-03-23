@@ -1,6 +1,8 @@
-.button-one {
-    &:link,
-    &:visited {
+.button-box {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
         font-size: 1.4rem;
         font-family: $font-family-1-b;
         color: $color-white;
@@ -9,25 +11,20 @@
         background-color:$color-blue-dark; 
         text-decoration: none;
         text-transform: uppercase;
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
+        border:none;
+        cursor: pointer;
+        margin-top: 6rem;
         transition: all .5s;
+
+        &:hover,
+        &:focus {
+            background-color:$color-red-dark;    
+            outline: none;       
+        }
+
         @include respond(sm-bp) {
-            font-size: 2.4rem;
-            padding: 2.5rem 5.5rem;
+            font-size: 1.6rem;
+            padding: 2rem 5.5rem;
         }
-
-        @include respond(xs-bp) {
-            width: 70%;
-        }
-    }
-
-    
-
-    &:hover,
-    &:focus {
-        background-color:$color-red-dark;           
     }
 }
