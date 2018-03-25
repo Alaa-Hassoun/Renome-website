@@ -23,6 +23,7 @@
     &__input {
         background: transparent;
         border: none;
+        width: 100%;
 
         &::-webkit-input-placeholder {
             color: $color-white;
